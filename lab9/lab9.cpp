@@ -53,6 +53,14 @@ int Output(int size) {
 
 int main() {
     int testVariable = 1; //тестовая переменная для ИТвПД
+	if (testVariable > 0) //валидация testVariable
+	{
+		printf("Переменная больше 0");
+	}
+	else 
+	{
+		printf("Переменная меньше 0");
+	}
 	Input(s);
 	Output(s);
 	temp = book[0];
