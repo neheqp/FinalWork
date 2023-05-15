@@ -4,7 +4,7 @@
 #include <malloc.h>
 #include <locale.h>
 
-int size = 3;
+int s = 3;
 
 
 typedef struct Info {
@@ -52,11 +52,11 @@ int Output(int size) {
 }
 
 int main() {
-	Input(size);
-	Output(size);
+	Input(s);
+	Output(s);
 	temp = book[0];
 	book[0] = book[2];
 	book[2] = temp;
-	Output(size);
+	Output(s);
 	return 0;
 }
