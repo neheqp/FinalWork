@@ -27,13 +27,13 @@ Book book[100], temp;
 int Input(int size) {
 	setlocale(LC_ALL, "Russian");
 	for (int i = 0; i < size; i++) {
-		printf("Введите id: ");
+		printf("пїЅпїЅпїЅпїЅпїЅпїЅпїЅ id: ");
 		scanf_s("%d", &book[i].id);
-		printf("Введите название книги: ");
+		printf("пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ: ");
 		scanf("%s", &book[i].name);
-		printf("Введите имя автора: ");
+		printf("пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ: ");
 		scanf("%s", &book[i].info.authorName);
-		printf("Введите дата выхода книги: ");
+		printf("пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ: ");
 		scanf_s("%d", &book[i].info.date);
 	}
 	return 0;
@@ -42,8 +42,8 @@ int Input(int size) {
 int Output(int size) {
 	setlocale(LC_ALL, "Russian");
 	printf("+---------------+--------+---------------+\n");
-	printf("| --Номер П/П---|Название|Доп. сведения -|\n");
-	printf("|               |        |Скор.|Мощность |\n");
+	printf("| --пїЅпїЅпїЅпїЅпїЅ пїЅ/пїЅ---|пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ|пїЅпїЅпїЅ. пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ -|\n");
+	printf("|               |        |пїЅпїЅпїЅпїЅ.|пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ |\n");
 	for (int i = 0; i < size; i++) {
 		printf("|% -15d|% -8s|% -5s|% -9d|\n",
 			book[i].id, book[i].name, book[i].info.authorName, book[i].info.date);
@@ -52,6 +52,7 @@ int Output(int size) {
 }
 
 int main() {
+    int testVariable = 1; //С‚РµСЃС‚РѕРІР°СЏ РїРµСЂРµРјРµРЅРЅР°СЏ РґР»СЏ РРўРІРџР”
 	Input(s);
 	Output(s);
 	temp = book[0];
